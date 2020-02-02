@@ -1,3 +1,9 @@
 #jumb_heading {
     margin-top: 100px;
 }
+
+#LiveChat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

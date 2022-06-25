@@ -1,13 +1,15 @@
 import {Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
+import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Experience from './pages/Experience.js';
+import Projects from './pages/Projects';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="experience" element={<Experience />} />
     </Routes>
   );
 }

@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Project from "./Project";
+import { v4 as uuidv4 } from "uuid";
+import MyProjects from "../data/MyProjects";
 
 const ProjectsList = () => {
-    const [projects, setProjects] = useState([]);
-    useEffect(()=> {
-        fetch('http://localhost:3000/projects.json')
-        .then(response=> response.json())
-        .then(data => setProjects(data))
-        .catch(err => console.error(err.message));
-    }, []);    
-
   return (
     <Row xs={1} md={2} className="g-4">
-      {projects.map((project, key) => (
+      {MyProjects.map((data) => (
         <Col>
-          <Project key={key} data={project} />
+          <Project key={uuidv4()} data={data} />
         </Col>
       ))}
     </Row>

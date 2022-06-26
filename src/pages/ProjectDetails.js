@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Button, Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import Layout from "../components/Layout";
+import SkillList from "../components/SkillList";
 import MyProjects from "../data/MyProjects";
 
 const ProjectDetails = () => {
@@ -16,7 +17,7 @@ const ProjectDetails = () => {
           <Card.Body>
             <Card.Title>{project.name}</Card.Title>
             <Card.Text>{project.description}</Card.Text>
-            Skills: {project.skills}
+            <SkillList skills={project.skills}/>
           </Card.Body>
           <Card.Footer className="text-muted">
             <Button

@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Card, Container } from "react-bootstrap";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
+import EmailIcon from '@mui/icons-material/MailOutline';
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const styles = {
@@ -29,9 +29,9 @@ const Home = () => {
             <Card.Text style={styles.text}>
               A software developer with a passion for learning and creating.
             </Card.Text>
-              <LinkedInIcon fontSize="large"/>
-              <EmailIcon fontSize="large"/>
-              <GitHubIcon fontSize="large"/>
+              <LinkedInIcon fontSize="large" color="primary" onClick={()=> window.open("https://www.linkedin.com/in/shanudey/", "_blank")}/>
+              <EmailIcon fontSize="large" color="error" onClick={()=> window.open("mailto:sd4shanudey@gmail.com", "_blank")}/>
+              <GitHubIcon fontSize="large" color="neutral" onClick={()=> window.open("https://github.com/ShanuDey", "_blank")}/>
           </Card.Body>
         </Card>
       </Container>

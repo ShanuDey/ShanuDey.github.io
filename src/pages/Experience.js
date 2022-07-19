@@ -28,7 +28,7 @@ const Experience = () => {
           </h5>
           <p>
             Working on NodeJS based Automation Framework to create and maintain
-            Regression test suites and CICD Pipeline.
+            Regression test suites and CI Pipeline.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
